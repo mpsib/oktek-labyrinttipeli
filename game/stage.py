@@ -13,7 +13,8 @@ stage = [['d ', 'rd', 'r ', 'rd', 'd ', 'rd', 'r ', 'd ', 'r ', 'r ', 'd ', 'd '
          ['r ', 'r ', 'r ', '  ', 'r ', 'r ', 'r ', '  ', 'r ', 'r ', 'r ', 'r ', 'r ', 'r ', '  ']]
 
 #simply connected eli kaikki seinät ovat yhteydessä kentän reunaan
-stageSC=[['d ', 'rd', 'r ', 'rd', 'd ', 'rd', 'r ', 'd ', 'r ', 'r ', 'd ', 'd ', 'rd', 'r ', 'd '],
+#ja mistä tahansa ruudusta on vain yksi reitti maaliin
+stageSC=[['d ', 'rd', 'r ', 'rd', 'd ', 'rd', 'r ', '  ', 'r ', 'r ', 'd ', 'd ', 'rd', 'r ', 'd '],
          ['d ', 'r ', '  ', 'd ', 'r ', '  ', 'rd', 'rd', 'r ', 'r ', '  ', 'd ', '  ', 'd ', 'd '],
          ['r ', 'rd', 'r ', 'r ', 'rd', 'r ', 'd ', 'r ', 'd ', 'rd', 'r ', 'rd', 'r ', 'rd', '  '],
          ['d ', 'd ', 'r ', 'd ', 'r ', '  ', 'd ', 'd ', 'd ', 'd ', 'r ', '  ', 'd ', 'rd', '  '],
@@ -22,7 +23,7 @@ stageSC=[['d ', 'rd', 'r ', 'rd', 'd ', 'rd', 'r ', 'd ', 'r ', 'r ', 'd ', 'd '
          ['r ', 'r ', 'rd', 'rd', '  ', '  ', 'd ', 'rd', '  ', 'd ', 'rd', '  ', 'r ', 'd ', 'd '],
          ['rd', '  ', 'd ', 'rd', 'r ', '  ', 'd ', 'd ', 'rd', '  ', '  ', 'rd', 'rd', 'r ', 'd '],
          ['d ', 'r ', '  ', 'rd', 'd ', 'rd', '  ', 'd ', 'd ', 'r ', 'r ', '  ', 'r ', '  ', 'd '],
-         ['r ', 'r ', 'r ', '  ', 'r ', 'r ', 'r ', '  ', 'r ', 'r ', 'r ', 'r ', 'r ', 'r ', '  ']]
+         ['r ', 'r ', 'r ', '  ', '  ', 'r ', 'r ', '  ', 'r ', 'r ', 'r ', 'r ', 'r ', 'r ', '  ']]
 
 #randomized stage that can be unsolvable
 def randomizedStage():

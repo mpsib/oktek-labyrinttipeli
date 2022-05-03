@@ -15,6 +15,8 @@ pygame.display.set_caption("Labyrinth")
 clock = pygame.time.Clock()
 
 game = Game(screen, 1)
+font = pygame.font.SysFont("Arial", 48)
+wintext = font.render("You win!", True, (0, 200, 100))
 
 while True:
     for event in pygame.event.get():
@@ -32,6 +34,8 @@ while True:
     ##  screen drawing functions
     screen.fill((0,0,0))
     game.draw()
+    if game.exitX == game.explorer.x and game.exitY == game.explorer.y:
+        screen.blit(wintext, (15*50/2-60, 50))
     #update screen
     pygame.display.flip()
     
