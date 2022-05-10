@@ -1,7 +1,5 @@
-from turtle import width
 import pygame
 
-from game.explorer import Explorer
 from game.game import Game
 
 pygame.init()
